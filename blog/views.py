@@ -8,6 +8,7 @@ def current_time(request):
     return HttpResponse(html)
 
 def index(request):
+    html = '<!DOCTYPE html> <html lang="en"> <head><meta charset="UTF-8"><title>Index</title></head>  <body> Welcome to zjlyyq home! </body> </html> '
     return render(request,'index.html')
 
 def plus_times(request,offset):
