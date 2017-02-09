@@ -54,7 +54,7 @@ ROOT_URLCONF = 'myblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\zjl\PycharmProjects\myblog\blog\templates'],
+        'DIRS': [r'E:\mycode\python\django\myblog\blog\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
