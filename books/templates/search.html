@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Search
+        {%  if query %}
+            Results
+        {% endif %}
+    </title>
+</head>
+<body>
+    <h1>Search</h1>
+    <form action="." method="get">
+        <label for="q">Search:</label>
+        <input type="text" name="q" value="{{ query|escape }}">
+        <input type="submit" value="Search">
+    </form>
+
+    {% if query %}
+        <h2>Result for "{{ query|escape }}":</h2>
+        {% if result %}
+            <ul>
+                {% for book in result %}
+                    <li>book</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endif %}
+</body>
+</html>

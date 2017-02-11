@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 import blog.views as bv
+import books.views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^times/$', bv.current_time),
     url(r'^times/plus/(\d{1,2})/$',bv.plus_times),
-    url(r'^index/$',bv.index)
+    url(r'^index/$',bv.index),
+    url(r'^search/$',books.views.search)
 ]
