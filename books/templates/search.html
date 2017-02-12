@@ -19,10 +19,10 @@
 
     {% if query %}
         <h2>Result for "{{ query|escape }}":</h2>
-        {% if result %}
+        {% if results %}
             <ul>
-                {% for book in result %}
-                    <li>book</li>
+                {% for book in results %}
+                    <li>{{book}}</li>
                 {% endfor %}
             </ul>
         {% endif %}
